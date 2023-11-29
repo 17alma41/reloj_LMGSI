@@ -29,16 +29,16 @@ function select(tag){
     navigator.clipboard.writeText(horaEnFormato24Horas)
   }
   
-  // function randomImages(){
-  //   const images = ["https://images.unsplash.com/photo-1696185570507-2d1283399560?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDAxNzg3NzF8&ixlib=rb-4.0.3&q=85",
-  //    "https://images.unsplash.com/photo-1697384334092-32e3c879d1ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDAxNzg3NzF8&ixlib=rb-4.0.3&q=85",
-  //   "https://images.unsplash.com/photo-1698813455987-4c79e1a8a366?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDAxNzg3NzF8&ixlib=rb-4.0.3&q=85",
-  //   "https://images.unsplash.com/photo-1693491010962-83b026fc742e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDAxNzg4Njh8&ixlib=rb-4.0.3&q=85"]
   
-  //   const randomNumber = Math.floor(Math.random() * images.length);
-  //   const imagenes_aleatorias = images[randomNumber];
-  //   let element = document.getElementById('background');
-  //   let elementStyle = window.getComputedStyle(element);
-  //   let elementUrl = elementStyle.getPropertyValue('imagenes_aleatorias');
-  //   console.log("intentando acceder a la imagen aleatoria");
-  // }
+  let images =[
+    `https://images3.alphacoders.com/132/1322308.jpeg`,
+    `https://www.pixground.com/wp-content/uploads/2023/04/Clouds-Meet-The-Sea-AI-Generated-4K-Wallpaper.jpg`,
+    `https://a-static.besthdwallpaper.com/amazing-spiderman-logo-wallpaper-2800x2100-106853_28.jpg`,
+    `https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg`,
+    `https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg` 
+    ]
+    window.onload = function() {
+    let SetBackGround= Math.floor(Math.random() * images.length);
+    document.body.style.backgroundImage = `url(${images[SetBackGround]})`;
+    }
+ 
